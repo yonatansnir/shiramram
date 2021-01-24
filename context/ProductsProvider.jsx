@@ -10,9 +10,9 @@ const ProductsProvider = ({ children }) => {
         fetch('/api/products')
             .then(resp => resp.json())
             .then(data => setProducts(data));
-        // fetch('/api/products/categories')
-        //     .then(resp => resp.json())
-        //     .then(data => setCategories(data))
+        fetch('/api/products/categories')
+            .then(resp => resp.json())
+            .then(data => setCategories(data))
     }, [])
     return(
         <ProductsContext.Provider value={{ products, categories }}>
