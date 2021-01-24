@@ -12,7 +12,7 @@ const SideCart = ({ isCartOpen, setCartOpen }) => {
         <>
         <div className={isCartOpen ? darkend : ''} onClick={setCartOpen}></div>
         <div className={cartContainer} style={isCartOpen ? { left: "0px" } : {}}>
-            {cart.list.length === 0 ? <h3>העגלה ריקה</h3> :
+            {cart.numberOfItems === 0 ? <h3>העגלה ריקה</h3> :
                 <div>
                     <h2>העגלה שלך</h2>
                     {cart.list.map(({product_id, name, price, quantity, image}) => (
@@ -28,7 +28,7 @@ const SideCart = ({ isCartOpen, setCartOpen }) => {
                     ))}
                 </div>
             }
-            {cart.list.length === 0 ? '' :
+            {cart.numberOfItems === 0 ? '' :
             <div className={continueToBy}>
                 <h3>סה"כ ₪{cart.totalItemsPrice}</h3>
                 <button onClick={() => setCart({ type: "CLEAR_CART" })}>ניקוי</button>
