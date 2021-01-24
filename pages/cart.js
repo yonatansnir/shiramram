@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import PageHead from './../components/pageHead/PageHead';
-import Summary from '../components/cart/summary';
+import Summary from '../components/cart/Summary';
 import TableCart from '../components/cart/TableCart';
 import { CartContext } from '../context/CartProvider';
 import { cartPage, btnBlack } from '../styles/cart.module.scss';
