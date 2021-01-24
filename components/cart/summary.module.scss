@@ -1,0 +1,35 @@
+.summary{
+    h2{ color: rgb(61, 61, 61); font-size: 23px; padding-bottom: 10px;
+    border-bottom: 1px solid rgb(206, 206, 206); }
+    border-bottom: 1px solid rgb(206, 206, 206);;
+     > div{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        h3{ font-weight: 300; font-size: 24px; }
+        span{ display: block; font-size: 15px; }
+    }
+    .shippings{
+        display: block;
+        label { display: block;
+            margin: 10px 0px; cursor: pointer;
+            span{ color: rgb(189, 189, 189); display: block }
+        }
+    }
+    button{
+        margin-top: 20px;
+        color: white;
+        width: 100%;
+        border: none; cursor: pointer;
+        font-weight: 500;
+        font-family: heebo;
+        font-size: 20px;
+        padding: 10px;
+        background: black;
+        border-radius: 0px;
+    }
+}
+.totalSum{
+    margin-top: 20px;
+    border-top: 1px solid rgb(206, 206, 206);
+}

@@ -1,0 +1,9 @@
+.checkoutPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1024px;
+    background: white;
+    @media (max-width: 650px){ grid-template-columns: 1fr } 
+}

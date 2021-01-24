@@ -1,0 +1,55 @@
+.productsPage{
+    padding: 0px 20px;
+    margin-top: 30px;
+    h2{
+        text-align: center;
+        font-weight: 400;
+        font-family: heebo;
+        font-size: 40px;
+    }
+}
+.productsList{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px 15px;
+    font-family: heebo;
+    @media (max-width: 800px) and (min-width: 501px){ grid-template-columns: 1fr 1fr; }
+    @media (max-width: 500px) { grid-template-columns: 1fr; }
+}
+.serachBox{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    input {
+        display: block;
+        transition: 1s;
+        margin: 4px auto;
+        height: 45px;
+        width: 100%; padding: 3px 0px; outline: none;
+        color: black;
+        font-weight: 500;
+        font-size: 22px;
+        font-family: heebo;
+        text-align: center;
+        background: none;
+        border-radius: 3px;
+        border: 3px solid black;
+        &:focus{
+            border: 3px solid rgb(185, 0, 176);
+        }
+    }
+    ul{
+        font-weight: 400;
+        list-style: none;
+        display: flex; flex-wrap: wrap; justify-content: flex-start;
+        li{ 
+            transition: 0.4s;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 120px; color: white;
+            margin: 10px; padding: 4px; background: black; position: relative;
+            span{ position: absolute; border-radius: 3px; right: 5px; background: white; width: 20px; height: 20px; top: 50%; transform: translateY(-50%); color:  rgb(0, 0, 0) }
+        }
+    }
+}

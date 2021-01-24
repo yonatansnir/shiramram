@@ -1,0 +1,11 @@
+.checkSumStyle{
+    margin: 20px;
+    padding: 20px;
+    background: rgb(252, 238, 255);
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    span{ margin-right: 10px;color: rgb(156, 156, 156); font-size: 15px; }
+}
