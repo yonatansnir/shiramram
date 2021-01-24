@@ -15,7 +15,6 @@ const ProductItem = ({ product }) => (
 )
 
 function getImage(arr){
-    return;
     return arr.length != 0 ? arr[0].src : '';
 }
 

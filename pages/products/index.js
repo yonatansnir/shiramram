@@ -19,7 +19,7 @@ const Products = () => {
                 <div className={serachBox}>
                     <ul>
                         <li onClick={() => setChooseCategorie('')} key={'jdf2452cs'} style={chooseCategorie ? {} : { background: 'rgb(185, 0, 176)' }}>הכל</li>
-                        {categories.map(({ id, name, count }) => (<li key={id} style={chooseCategorie === name ? { background: 'rgb(185, 0, 176)' } : {}} onClick={() => setChooseCategorie(name)}><span>{count}</span>{name}</li>))}
+                        {categories ? categories.map(({ id, name, count }) => (<li key={id} style={chooseCategorie === name ? { background: 'rgb(185, 0, 176)' } : {}} onClick={() => setChooseCategorie(name)}><span>{count}</span>{name}</li>)) : ''}
                     </ul>
                     <input type="text" placeholder="חפשי" onChange={e => setSearch(e.target.value)} />
 
